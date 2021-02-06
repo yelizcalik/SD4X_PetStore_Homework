@@ -29,9 +29,7 @@ function calculateFoodOrder(numAnimals, avgFood) {
  */
 function mostPopularDays(week) {
     if ((week == null) || (week.length==0)) return null;
-    var maxTraffic = week[0].traffic; // initialize the max traffic
-
-    // use a for loop to find the max traffic
+    var maxTraffic = week[0].traffic;
     for (var day of week) {
         if (day.traffic > maxTraffic) {
             maxTraffic = day.traffic;
